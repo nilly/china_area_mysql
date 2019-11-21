@@ -40,7 +40,7 @@ CREATE TABLE `cnarea_2016` (
   `city_code` char(6) NOT NULL DEFAULT '' COMMENT '区号',
   `name` varchar(50) NOT NULL DEFAULT '' COMMENT '名称',
   `short_name` varchar(50) NOT NULL DEFAULT '' COMMENT '简称',
-  `merger_name` varchar(50) NOT NULL DEFAULT '' COMMENT '组合名',
+  `merger_name` varchar(200) NOT NULL DEFAULT '' COMMENT '组合名',
   `pinyin` varchar(30) NOT NULL DEFAULT '' COMMENT '拼音',
   `lng` decimal(10,6) NOT NULL DEFAULT '0.000000' COMMENT '经度',
   `lat` decimal(10,6) NOT NULL DEFAULT '0.000000' COMMENT '纬度',
@@ -49,3 +49,8 @@ CREATE TABLE `cnarea_2016` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='中国行政地区表';
 
 ```
+
+
+表结构这里有个问题,    merger_name varchar(50) 不够长, 需要修改为 varchar(200) 比较合适. 
+
+
