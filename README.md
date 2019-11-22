@@ -54,3 +54,7 @@ CREATE TABLE `cnarea_2016` (
 表结构这里有个问题,    merger_name varchar(50) 不够长, 需要修改为 varchar(200) 比较合适. 
 
 
+
+增加 针对postgresql  数据库的 daump 文件. 
+
+可以直接导入 pg 数据库. 
